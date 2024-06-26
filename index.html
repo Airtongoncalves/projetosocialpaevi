@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJETO PAEVI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="logotipo"><a href="#">PROJETO PAEVI</a></li>
+            <li class="hideMobile"><a href="#">Quem Somos</a></li>
+            <li class="hideMobile"><a href="#">Ações Sociais </a></li>
+            <li class="hideMobile"><a href="#">Projetos</a></li>
+            <li class="hideMobile"><a href="#">Jogadores</a></li>
+            <li class="hideMobile"><a href="#">Depoimentos</a></li>
+            <li class="hideMobile"><a href="#">Patrocinadores</a></li>
+            <li class="hideMobile"><a href="#">Contato</a></li>
+            <li class="hideDesktop" onclick=showSidebar()><a href="#">
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+            </a></li>
+        </ul>
+
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#">
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+            </a></li>            
+            <li><a href="#">Quem Somos</a></li>
+            <li><a href="#">Ações Sociais</a></li>
+            <li><a href="#">Projetos</a></li>
+            <li><a href="#">Jogadores</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+
+
+        <h1 class="rotate-move">PROJETO SOCIAL PAEVI</h1>
+        <p class="rotate-move" style="color:gold;">Misturamos Futebol & Solidariedade</p>
+
+    </div>
+   
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector(".sidebar");
+            sidebar.style.display = "flex";
+        }
+
+        function hideSidebar(){
+            const sidebar = document.querySelector(".sidebar");
+            sidebar.style.display = "none";
+        }
+    </script>
+</body>
+</html>
